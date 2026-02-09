@@ -1,0 +1,4 @@
+/*SUAVIZAR O SCROLL*/
+html {
+    scroll-behavior: smooth;
+}
