@@ -1,7 +1,7 @@
 # demobootstrap_senaiTI
 
 #  Experimentando o bootstrap
-Projeto em desenvolvimento utilizando o framework **Bootstrap 5**
+Projeto em desenvolvimento utilizando o framework **Bootstrap 5**<br>
 [Site finalizado](https://lfescarlate.github.io/demobootstrap_senaiTI/)
 ---
 
