@@ -2,7 +2,7 @@
 
 #  Experimentando o bootstrap
 Projeto em desenvolvimento utilizando o framework **Bootstrap 5**
-
+[Site finalizado](https://lfescarlate.github.io/demobootstrap_senaiTI/)
 ---
 
 ## Tecnologias utilizadas
@@ -22,4 +22,4 @@ Projeto em desenvolvimento utilizando o framework **Bootstrap 5**
 ---
 
 ## Print do projeto 📸
-![Thumbnail do Projeto](/img/Sem%20título.jpg)
+![Thumbnail do Projeto](/img/siteFinalizado.jpeg)
