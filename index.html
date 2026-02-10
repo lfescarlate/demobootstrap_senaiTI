@@ -6,95 +6,377 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Introdução a Tecnologia da Informação</title>
 
+  <!--FAVICON-->
+  <link rel="icon" type="img/x-icon" href="img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="cor-background"> <!--Classe no body para alterar toda cor do background-->
 
-<!--HEADER-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">
-      <i class="bi bi-cpu me-2"></i>Introdução a Tecnologia da Informação
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="quemsou.html">Quem sou</a>
-        </li>
-      </ul>
+  <!--HEADER-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="bi bi-cpu me-2"></i>Introdução a Tecnologia da Informação
+      </a>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!--ACCORDION 1-->
-<div class="accordion" id="accordionPanelsStayOpenExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-        ASPECTOS ÉTICOS E LEGAIS DA COMUNICAÇÃO
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+  <!--IMAGEM CENTRALIZADA (d-block)-->
+  <div class="text-center mt-4">
+    <img src="img/perfil_cortada.jpg" class="rounded-circle d-block mx-auto img-fluid shadow-lg img-thumbnail"
+      alt="foto-perfil"
+      style="width: 200px; height: 200px; margin-top: 20px; object-fit: cover; box-shadow: 0px 10px 30px rgb(156, 150, 150); border: none;">
+
+    <!--CLASS PARA ESCOLHER A FONTE NO CSS E ESTILIZAR O NOME-->
+    <h1 class="display-4 fw-bold mt-3" style="font-family: 'Montserrat', sans-serif; color: #333; letter-spacing: 1px;">
+      Luiz Felipe Escarlate</h1>
+    <p class="text-muted">Desenvolvedor em formação | SENAI - RJ</p>
+  </div>
+
+  <!--DESCRIÇÃO DO QUEM SOU EU-->
+  <div class="container py-2">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 fw-bold">
+        <p class="text-muted">
+          Atualmente estudando front end e me aprofundando no framework <strong>Bootstrap</strong> e aprendendo como Git
+          e Github funcionam na prática. Meu objetivo é me tornar um programador front end com uma base no back end.<br>
+          Além da tecnologia, gosto de compartilhar visualmente o que estou aprendendo e testando sempre em busca de
+          novos desafios.
+        </p>
       </div>
     </div>
   </div>
 
-  <!--ACCORDION 2-->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-         FUNÇÃO E UTILIDADES DA GESTÃO DE PROJETOS
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+  <!--ACCORDION 1-->
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+          ASPECTOS ÉTICOS E LEGAIS DA COMUNICAÇÃO
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p>
+            <b>O que é ética digital?</b><br>
+
+            Ética é um conjunto de princípios morais que guiam os indivíduos ou um grupo da sociedade.
+            Se tratando da internet, ética no mundo digital é o que atua para manter a <b>dignidade,
+              segurança,privacidade e outros valores no ambiente virtual</b>, seguindo tanto os valores morais quanto as
+            legislações a respeito do assunto.<br>
+            Ou seja, a ética digital está presente na atuação das Tecnologias de Informação e Comunicação (TIC) na
+            sociedade atual.
+          </p>
+          <p>
+            <b>A ética digital no código brasileiro.</b><br>
+            No brasil, existem normas e regulamentações pensadas para manter alguns princípios de ética digital. São
+            inúmeras as leias que visam proteger a dignidade humana, inclusive virtualmente, e um belo exemplo é o Marco
+            Civil da Internet <b><a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm">(Lei
+                n. 12.965/2014)</a></b>, que garante o sigilo de dados pessoais, a privacidade de mensagens, as
+            responsabilidades sobre o conteúdo e a neutralidade da rede.
+          </p>
+          <p>
+            <b>Porque é importante ter regras para o uso da internet?</b><br>
+            Segundo o sociólogo Zygmunt Bauman, a tecnologia fez com que as pessoas deixassem de ter consciência dos
+            efeitos de suas ações, que agora podem tomar um rumo globalizado. Isso trouxe uma série de novos desafios e
+            questões ético-sociais. <br>
+            Podemos citar como exemplo a <b>privacidade.</b> Sem leis, as empresas poderiam acessar, compartilhar e
+            vender todos os tipos de dados, desde preferências de compra até informações e arquivos pessoais. <br>
+            Outros perigos são os <b>crimes digitais:</b><br>
+          <ul>
+            <li>Ofensas, bullying e ameaças em geral;</li>
+            <li>Crime de falsa identidade;</li>
+            <li>Estelionato;</li>
+            <li>Violação de sistemas de segurança;</li>
+            <li>Divulgação de fotos e dados;</li>
+            <li>Violação de propriedade intelectual;</li>
+          </ul>
+          Tecnologias como <a href="https://www.ibm.com/think/topics/big-data">Big Data</a>, <a
+            href="https://aws.amazon.com/pt/what-is/machine-learning/">Machine Learning</a>, e Inteligência Artificial
+          trazem uma discussão ainda mais calorosa sobre os limites que essa ética digital deve impor sem impedir o
+          avanço tecnológico.
+          <p>
+            <b>A ética no mundo digital na prática</b><br>
+            Incluir a ética no mundo digital, como podemos perceber, é uma prática muito importante para que seja
+            possível utilizar a internet com segurança e responsabilidade, porém a prática não é tão simples quanto
+            parece. <br>
+            Os novos softwares inteligentes, algoritmos e outras tecnologias estão revolucionando o mercado e tornando
+            cada vez mais difícil desenhar as "linhas" que separam o mundo digital do físico. <br>
+            Por esse motivo, é muito importante a discussão sobre até os beneficios trazidos com <a
+              href="https://blog.mackenzie.br/mercado-carreira/mercado-de-trabalho/quais-sao-os-impactos-da-transformacao-digital-na-comunicacao/">eficiência
+              da comunicação</a>, a redução de custos para funções e transações do dia a dia, o envio de informações
+            personalizadas e a acessibilidade são diversos e devem continuar crescendo. <br>
+            Mas, para que isso aconteça, também existem alguns efeitos negativos como: <br>
+          <ul>
+            <li>Manipulação de mercados;</li>
+            <li>Volatilidade;</li>
+            <li>Seleção de informações;</li>
+            <li>Desfavorecimento de pequenas empresas;</li>
+          </ul>
+          <p>
+            Por mais que tenhamos regulamentações, <b>a ética digital não é exigida por lei; </b>ou seja, depende de
+            como cada empresa ou indivíduo atua nesse meio. <br>
+            É preciso que cada pessoa tenha consciência de seus atos e do relacionamento que está criando com as
+            empresas com as quais interage.
+          </p>
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--ACCORDION 2-->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          FUNÇÃO E UTILIDADES DA GESTÃO DE PROJETOS
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p>
+            <b>O que é gestão de projetos?</b><br>
+            Em um negócio, os projetos são desenvolvidos parar gerar soluções, serviços ou produtos exclusivos com
+            intuito de atender às necessidades dos clientes e parceiros. Nesse sentido, <b>a gestão de projetos é a
+              técnica utilizada para planejar, executar e tornar reais as ideias inovadoras nas empresas.</b>
+          </p>
+          <p>
+            <b>Quais são os benefícios desse gerenciamento?</b><br>
+            A gestão de projetos se destaca como uma abordagem estratégica em ambientes comporativos, entregando
+            diversar vantagens que melhoram o sucesso empresarial. A seguir, conheceremos os principais benefícios dessa
+            atuação.
+          </p>
+          <p>
+            <b>Otimização do cronograma</b><br>
+            Essa prática de gerenciamento torna o planejamento de prazos mais rigoroso, resultando na entrega pontual
+            dos produtos e serviços. Com a definição adequada dos cronogramas, é possível detectar e mitigar gargalos,
+            fazendo com que todos os procedimentos projetistas sejam concluídos no período combinado. Esse aprimoramento
+            eleva a satisfação dos clientes e fortalece a reputação da empresa.
+          </p>
+          <p>
+            <b>Evolução produtiva</b><br>
+            Por meio da gestão de projetos, os times passam a atuar de forma mais organizada. A determinação clara de
+            metas e responsabilidades garante que cada integrante execute um papel específico no contexto do processo de
+            desenvolvimento. Assim, a produtividade tende a crescer, pois trabalhos são concluídos com eficiência, sem
+            refações.
+          </p>
+          <p>
+            <b>Melhoria na comunicação interna</b><br>
+            A acessibilidade facilitada proporcionada pelo controle adequado de projeto <b>favorece a troca de
+              ideias</b> entre os membros da equipe. Reuniões periódicas e relatórios de desempenho permitem que todos
+            estejam a par do andamento do processo. Essa clareza intensifica a colaboração e diminui o surgimento de
+            conflitos.
+          </p>
+          <p>
+            <b>O que faz um gestor de projetos?</b><br>
+            As atribuições desse profissional correspondem aos seguintes procedimentos:<br>
+          <ul>
+            <li>Controle de escopo, custos e prazos;</li>
+            <li>Seleção e aquisição de recursos, como sistema de gestão de projetos;</li>
+            <li>Definição clara de responsabilidades;</li>
+            <li>Aplicação de metodologias ágeis específicas;</li>
+            <li>Comunicação de decisões e resultados;</li>
+            <li>Monitoramento de indicadores de desempenho</li>
+          </ul>
+          </p>
+          <p>
+            <b>Quais metodologias podem ser seguidas?</b><br>
+            A gestão de projetos é tão versátil que pode abraçar diversos métodos de execução. No entanto, cada um conta
+            com determinadas particularidades e adequações a diferentes tipos de trabalho e ambientes. A seguir,
+            conheceremos cinco alternativas interessantes.
+          </p>
+          <p>
+            <b>Agile</b><br>
+            Como o próprio nome diz, ele é <b>focado na agilidade</b> para promover o dinamismo e a colaboração entre
+            equipes e departamentos. É responsável pela entrega frquente de incrementos funcionais, viabilizando ajustes
+            rápidos às mudanças nas demandas do cliente. O Agile é embasado em ciclos curtos de desenvolvimento,
+            chamados de iterações, que viabilizam a revisão constante do trabalho executado.
+          </p>
+          <p>
+            <b>Scrum</b><br>
+            <b>É uma abordagem que se insere dentro da execução Agile</b>, garantindo uma estrutura de trabalho
+            específica para o gerencimento de projetos. Nesse sentido, o Scrum é composto por papéis, eventos e
+            artefatos para formentar entregas frequentes e complementares de produtos. <br>
+            A metodologia é dividida em <b>sprints</b>(períodos curtos e ficos de tempos) de até duas a quatro semanas.
+            Durante esse período, os integrantes se concentram em concluir um número específico de tarefas. Para isso,
+            reuniões diárias são realizadas para acompanhar o progrsso e detectar falhas. Por último, o trabalho é
+            revisado ao final de cada sprint para providenciar ajustes e melhorias, garantindo que o produto final
+            atenda às expectativas do cliente.
+          </p>
+          <p>
+            <b>Kanban</b><br>
+            É um panorama visual que visa aprimorar o fluxo de trabalho por meio de um quadro com colunas que refletem
+            as etapas do processo. As tarefas são representadas por cartões e movidas de uma coluna para outra conforme
+            a progressão do projeto. <br>
+            A flexibilidade do Kanban o torna relevante para empreendimentos onde as prioridades mudam com frequência,
+            assegurando uma resposta rápida as demandas do mercado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--ACCORDION 3-->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseThree">
+          GITHUB E GIT
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p>
+            <b>O que é Git e para que serve?</b><br>
+            Em um equipe, apenas poder acessar o código de outras pessoas colaboradoras não é o suficiente. <br>
+            Mais do que isso: precisamos manter o <b>histórico</b> dos nossos arquivos e das nossas modificações. <br>
+            Dessa forma podemos voltar atrás e recuperar o estado do sistema: como ele era ontem, ou no ano passado,
+            comparar as mudanças para encontrar bugs e estudar otimizações
+          </p>
+          <div>
+            <img src="img/alura-github.webp" alt="commits">
+          </div>
+          <p>
+            Na imagem acima há destaque para 3 <i>commits</i>: <br>
+          <ol>
+            <li>"Adicionando título a página index": Neste primeiro commit percebemos que o dev responsável criou a
+              estrutura inicial de uma página de perfil de usuário.</li><br>
+            <li>"Altera o título da index para Perfil do usuário e adciona xyz.png": Neste segundo commit notamos que
+              alteraram o título da página e acrescentaram uma noa imagem.</li><br>
+            <li>"Altera o layout da página": Neste terceiro commit, observamos que alteraram o layout da página de
+              usuário, cores e posições de elementos.<br>
+              Com base nesses commits, se proventura o cliente não gostar da mundança de layout implementada no commit
+              3, o time de desenvolvimento pode voltar o layout como era no commit 2.</li>
+          </ol>
+          </p>
+          <p>
+            <b>Como funciona o Git?</b><br>
+            Todos os nossos arquivos, assim como seus históricos, ficam em um <b>repositório</b> e existiam vários
+            sistemas que gerenciam repositórios assim, como o CVS e SVN. <br>
+            O Git é uma alternativa com um funcionamento mais interassante ainda: ele é distribuiído e todo mundo tem
+            uma cópia inteira do repositório, não apenas o "servidor principal". <br>
+            Uma das vantagens disso é que cada pessoa pode desenvolver offline, realizando seus commits e outras
+            operações sem depender de uma conexão constante com o servidor principal
+          </p>
+          <p>
+            <b>Conceitos fundamentais do Git</b><br>
+            Para o funcionamento do Git, existem conceitos com nomenclaturas um tanto diferentes, que são:
+          </p>
+          <p>
+            <b>Repositórios, commits e árvores (Trees)</b><br>
+            Um repositório é como uma pasta ou diretório que contém todos os arquivos e o histórico de um projeto. <br>
+            Já o termo <b>commit</b> pode ter como tradução literal "compromisso", que seria uma ação em que você faz
+            uma alteração no projeto, se compromete e salva suas alterações no histórico do projeto. <br>
+            Ou seja, cada commit é uma entrada no histórico que contém informações sobre alterações feitas. <br>
+            Árvores, por último, representam a estrutura do diretório e arquivos em um commit específico, que tem como
+            função registrar a organização do projeto ao longo do histórico de desenvolvimento.
+          </p>
+          <p>
+            <b>Ramificações (Branches) e fusões (Merges)</b><br>
+            As "ramificações" ou <b>branches</b> permitem que você crie linhas separadas de desenvolvimento para
+            trabalhar em recursos ou correções sem afetar na linha principal do projeto. <br>
+            Cada branch é uma ramificação independente do código-fonte, possibilitando que você isole e desenvolva novas
+            funcionalidades, refatore o código ou faça correções e testes em paralelo, sem interferir no código
+            existente na branch principal, que geralmente é nomeada como "main". <br>
+            Em um projeto com branches diferentes, a fusão, ou merce, permite combinar as alterações dessas branches de
+            volta à linha principal, quando as alterações estão prontas.
+          </p>
+          <h2>GitHub</h2>
+          <p>
+            <b>O que é GitHub?</b><br>
+            <b>GitHub</b> é uma plataforma para gerenciar seu código e criar um ambiente de colaboração entre devs,
+            utilizando o Git como sistema de controle. <br>
+            Ela vai facilitar o uso do Git, escondendo alguns detalhes mais complicados de setup. É lá que você
+            provavelmente vai ter seu repositório e usar no dia a dia. <br>
+            O sistema web que o GitHub possui permite que você altere arquivos lá mesmo, apesar de não ser muito
+            aconselhado, pois você não terá um editor, um ambiente de desenvolvimento e de testes. <br>
+            Para se comunicar com o GitHub e mexer nos seus arquivos do repositório, você pode usar o <b>comando</b> do
+            git e suas diretivas de commit, pull e psuh.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--ACCORDION 4-->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseFour">
+          QUAL A FUNÇÃO DO DOCKER?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p>
+            <b>O que é Docker?</b><br>
+          <ul>
+            <li>O software de TI "Docker" é uma tecnologia de conteinerização para criação e uso de containers Linux®.
+            </li>
+            <li>A <a href="https://forums.docker.com/">comunidade open source do Docker</a> trabalha gratuitamente para
+              melhorar essas tecnologias para todos os usuários.</li>
+            <li>A empresa <a href="https://www.docker.com/">Docker Inc.</a> se baseia no trabalho realizado pela
+              comunidade do Docker, tornando-o mais seguro, e compartilha os avançoes com a comunidade em geral. Depois,
+              ela oferece aos clientes empresariais o suporte necessário para as tecnologias, que foram aprimoradas e
+              fortalecidas.</li>
+          </ul>
+          Com o Docker, é possível lidar com os containers como se fossem máquinas virtuais modulares e extremamente
+          lightweight. Além disso, os containers oferecem maior flexibilidade para você criar, implantar, copiar e
+          migrar um container de um ambiente para outro. Isso otimiza as apps na nuvem.
+          </p>
+          <p>
+            <b>Como o Docker funciona?</b><br>
+            A tecnologia Docker usa o kernel do Linux e funcionalidades do kernel, como cGroups e namespaces, para
+            segregar processos. Assim, eles podem ser executados de maneira independente. O objetivo dos containers é
+            criar independência: a habilidade de executar diversos processos e apps separadamente para utilizar melhor a
+            infraestrutura e, ao mesmo tempo, manter a segurança que você teria em sistemas separados. <br>
+
+          <p>As ferramentas de container, incluindo o Docker, incluem um modelo de implantação com base em imagem. Isso
+            facilita o compartilhamento de uma aplicação ou conjunto de serviços, incluindo todas as dependências deles
+            em vários ambientes. O Docker também automatiza a implantação da aplicação (ou de conjuntos de processos que
+            constituem uma app) dentro desse ambiente de containers. <br>
+          </p>
+          <p>
+            Essas ferramentas baseadas nos containers Linux fazem com que o Docker seja exclusivo e fácil de usar. Elas
+            também oferecem aos usuários acesso sem precedentes a apps e total controle sobre as versões e distribuição,
+            além da habilidade de implantar com rapidez.
+          </p>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
-  <!--ACCORDION 3-->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        GITHUB E GIT
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
 
-<!--ACCORDION 4-->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-        QUAL A FUNÇÃO DO DOCKER?
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
+  <!--FOOTER-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+    <p class="col-md-4 mb-0 text-body-secondary">&copy; SENAI 2026</p>
 
+    <ul class="nav col-md-3 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-body-secondary fs-3 ms-2" href="https://github.com/lfescarlate/demobootstrap_senaiTI.git">
+          <i class="bi bi-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="text-body-secondary fs-3 ms-2" href="https://www.linkedin.com/in/lfescarlate/">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="text-body-secondary fs-3 ms-2" href="https://www.instagram.com/lfescarlate/">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </li>
+    </ul>
 
+  </footer>
   <!--SCRIPT BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

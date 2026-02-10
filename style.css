@@ -1,4 +1,31 @@
 /*SUAVIZAR O SCROLL*/
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.cor-background {
+  background-color: rgb(156, 150, 150);
+}
+
+/*ALTERAR A COR DO ACCORDION*/
+.accordion-item{
+  background-color: #343a40;
+  color: white;
+  border: 1px solid #454d55;
+}
+
+/*ALTERAR A COR DO BOTÃO DO ACCORDION*/
+.accordion-button{
+  background-color: #343a40;
+  color: #adb5bd;
+}
+
+/*QUANDO O ACCORDION ESTIVER ABERTO*/
+.accordion-button:not(.collapsed){
+  background-color: #212529;
+  color: #fff
+}
+
+.accordion-body {
+  background-color: #2c3034;
 }
